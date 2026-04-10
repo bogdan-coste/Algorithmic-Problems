@@ -1,3 +1,4 @@
+![Banner](./resources/banner/banner.svg)
 # Coding Interview Prep: The Essential Topics
 
 > A curated, frequency-based guide to mastering technical interviews.  
