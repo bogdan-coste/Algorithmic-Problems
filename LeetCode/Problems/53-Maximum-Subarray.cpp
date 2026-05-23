@@ -1,12 +1,22 @@
+#include <climits>
+
 class Solution {
 public:
-int maxSubArray(vector<int>& nums) {
-    int maxi=nums[0]; 
-    int currentSum=nums[0];
-    for(int i=1;i<nums.size();i++) {
-        currentSum=max(nums[i],currentSum+nums[i]);
-        maxi=max(maxi,currentSum);
+    int maxSubArray(vector<int>& nums) {
+        
+        int maxi = INT_MIN;
+        int sum = 0;
+
+        for(int i = 0; i < nums.size(); i++){
+            
+            sum = std::max(nums[i], sum + nums[i]);
+            maxi = std::max(maxi, sum);
+        }
+
+        return maxi;
     }
-    return maxi;
-}
 };
+
+int main(){
+    
+}
